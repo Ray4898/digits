@@ -26,4 +26,3 @@ if (Contacts.find().count() === 0) {
     Meteor.settings.defaultContacts.map(data => addContactData(data));
   }
 }
-

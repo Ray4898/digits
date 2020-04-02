@@ -3,7 +3,6 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Card, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Stuffs } from '../../api/stuff/Stuff';
 import Contact from '../components/Contact';
 import { Contacts } from '../../api/stuff/Contacts';
 
@@ -45,4 +44,3 @@ export default withTracker(() => {
     ready: subscription.ready(),
   };
 })(ListContact);
-
