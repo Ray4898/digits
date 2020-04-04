@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Segment, Header } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, LongTextField,  TextField,SubmitField} from 'uniforms-semantic';
+import { AutoForm, ErrorsField, LongTextField, TextField, SubmitField } from 'uniforms-semantic';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
@@ -23,7 +23,7 @@ class AddContact extends React.Component {
   submit(data, formRef) {
     const { firstName, lastName, address, image, description } = data;
     const owner = Meteor.user().username;
-    Contacts.insert({ firstName, lastName,  address, image, description, owner },
+    Contacts.insert({ firstName, lastName, address, image, description, owner },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
