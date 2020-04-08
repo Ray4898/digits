@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 import Note from './Note';
 import AddNote from './AddNote';
+import Delete from './delete';
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Contact extends React.Component {
   render() {
@@ -31,6 +32,9 @@ class Contact extends React.Component {
           </Card.Content>
           <Card.Content extra>
             <AddNote owner={this.props.contact.owner} contactId={this.props.contact._id}/>
+          </Card.Content>
+          <Card.Content>
+            <Delete owner={this.props.contact.owner} contactId={this.props.contact._id}/>
           </Card.Content>
         </Card>
     );

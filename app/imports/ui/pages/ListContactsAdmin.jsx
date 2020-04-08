@@ -5,7 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import Contact from '../components/Contact';
 import { Contacts } from '../../api/stuff/Contacts';
-
+import { Notes } from '../../api/note/Notes';
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListContactsAdmin extends React.Component {
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -19,7 +19,10 @@ class ListContactsAdmin extends React.Component {
         <Container>
           <Header as="h2" textAlign="center" inverted>List Contacts</Header>
           <Card.Group centered>
-            {this.props.contacts.map((contact) => <Contact key={contact._id} contact={contact} />)}
+            { this.props.contacts.map((contact, index) => <Contact
+                key={index}
+                contact={contact}
+                notes={this.props.notes.filter(note => (note.contactId === contact._id))}/>)}
           </Card.Group>
 
 
@@ -31,6 +34,7 @@ class ListContactsAdmin extends React.Component {
 /** Require an array of Stuff documents in the props. */
 ListContactsAdmin.propTypes = {
   contacts: PropTypes.array.isRequired,
+  notes: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -38,8 +42,10 @@ ListContactsAdmin.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('ContactsAdmin');
+  const subscription2 = Meteor.subscribe('Notes');
   return {
     contacts: Contacts.find({}).fetch(),
-    ready: subscription.ready(),
+    notes: Notes.find({}).fetch(),
+    ready: subscription.ready() && subscription2.ready(),
   };
 })(ListContactsAdmin);
