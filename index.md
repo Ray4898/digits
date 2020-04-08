@@ -1,4 +1,4 @@
-<img src="./doc/homep.PNG">
+![](https://github.com/Ray4898/digits/blob/master/doc/homep.PNG)
 
 Meteor-application-template-react is a sample Meteor 1.9 application that illustrates:
 
