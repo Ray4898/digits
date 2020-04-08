@@ -207,17 +207,17 @@ After logging in, here is the page that allows you to list all the contact you h
 
 You click the "Edit" link to go to the Edit contact page, shown next.
 
-#### Edit Stuff page
+#### Edit contact page
 
-After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
+After clicking on the "Edit" link associated with a contact, this page displays that allows you to change and save it:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/edit-stuff-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/edit.PNG)
 
 #### Landing (after Login), Admin user
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
 
-![](https://github.com/Ray4898/digits/blob/master/doc/userlistc.PNG)
+![](https://github.com/Ray4898/digits/blob/master/doc/admin.PNG)
 
 #### Admin page (list all users contacts)
 
