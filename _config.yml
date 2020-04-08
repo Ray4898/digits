@@ -1,5 +1,5 @@
-title: meteor-application-template-react
-description: A template for quickly starting Meteor application development
+title: Digits
+description: A web application to create and list the contacts
 google_analytics:
 show_downloads: true
 theme: jekyll-theme-leap-day
