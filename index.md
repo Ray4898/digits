@@ -168,44 +168,44 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-<img src="./doc/homep.PNG">
+![](https://github.com/Ray4898/digits/blob/master/doc/homep.PNG)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
-#### Login page
+#### Signin page
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/signin-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/signin.PNG)
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/register-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/signup.PNG)
 
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-after-login-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/userpage.PNG)
 
-You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
+You can now add new contact documents, and list the contact you have created. Note you cannot see any contact created by other users.
 
-#### Add Stuff page
+#### Add contact page
 
-After logging in, here is the page that allows you to add new Stuff:
+After logging in, here is the page that allows you to add new contact:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/add-stuff-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/useraddc.PNG)
 
-#### List Stuff page
+#### List Contact page
 
-After logging in, here is the page that allows you to list all the Stuff you have created:
+After logging in, here is the page that allows you to list all the contact you have created:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/list-stuff-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/userlistc.PNG)
 
-You click the "Edit" link to go to the Edit Stuff page, shown next.
+You click the "Edit" link to go to the Edit contact page, shown next.
 
 #### Edit Stuff page
 
@@ -217,13 +217,13 @@ After clicking on the "Edit" link associated with an item, this page displays th
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/admin-landing-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/userlistc.PNG)
 
-#### Admin page (list all users stuff)
+#### Admin page (list all users contacts)
 
-To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
+To provide a simple example of a "super power" for Admin users, the Admin page lists all of the contact by all of the users:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/admin-list-stuff-page.png)
+![](https://github.com/Ray4898/digits/blob/master/doc/adminlistall.PNG)
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
