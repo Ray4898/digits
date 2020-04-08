@@ -1,4 +1,4 @@
-![](https://github.com/Ray4898/digits/tree/master/doc/homep.PNG)
+<img src="doc/homep.PNG">
 
 digits:
 
