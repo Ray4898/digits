@@ -1,6 +1,6 @@
 ![](https://github.com/Ray4898/digits/tree/master/doc/homep.PNG)
 
-Meteor-application-template-react is a sample Meteor 1.9 application that illustrates:
+digits:
 
   * A standard directory layout using 'imports/' as recommended in the [Meteor Guide](https://guide.meteor.com/structure.html)
   * [Semantic UI React](https://react.semantic-ui.com/) for user interface.
