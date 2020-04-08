@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-page.png)
+![](https://github.com/Ray4898/digits/tree/master/doc/homep.PNG)
 
 Meteor-application-template-react is a sample Meteor 1.9 application that illustrates:
 
