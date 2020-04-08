@@ -137,7 +137,7 @@ client/
 
 imports/
   api/           # Define collections
-    stuff/       # The Stuff collection definition
+    contract/       # The contract collection definition
   startup/       # Define code to run when system starts up (client-only, server-only, both)
     client/
     server/
@@ -168,7 +168,7 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-page.png)
+<img src="doc/homep.png">
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
