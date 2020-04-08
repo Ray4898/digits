@@ -1,4 +1,4 @@
-<img src="../doc/homep.PNG">
+<img src="./doc/homep.PNG">
 
 Meteor-application-template-react is a sample Meteor 1.9 application that illustrates:
 
@@ -168,7 +168,7 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-<img src=../doc/homep.PNG">
+<img src="./doc/homep.PNG">
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
