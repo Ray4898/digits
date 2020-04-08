@@ -31,10 +31,7 @@ The first time you run the app, it will create some default users and data. Here
 ```
 meteor npm run start
 
-> meteor-application-template-react@ start /Users/philipjohnson/github/ics-software-engineering/meteor-application-template-react/app
-> meteor --no-release-check --settings ../config/settings.development.json
 
-[[[[[ ~/github/ics-software-engineering/meteor-application-template-react/app ]]]]]
 
 => Started proxy.
 => Started MongoDB.
