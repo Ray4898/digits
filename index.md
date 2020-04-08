@@ -183,7 +183,9 @@ After logging in, here is the page that allows you to add new contact:
 #### List contact page
 
 After logging in, here is the page that allows you to list all the contacts you have created:
-
+User also can add note to the contact. 
+The note would also be showed in the contact card.
+User also can delete the contact by clicking the delete.
 <img src="doc/userlistc.PNG">
 
 You click the "Edit" link to go to the Edit contact page, shown next.
@@ -205,6 +207,8 @@ You can define an "admin" user in the settings.json file. This user, after loggi
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the contacts by all of the users:
 
 <img src="doc/adminlistall.PNG">
-
+Admin also can add note to the contact. 
+The note would also be showed in the contact card.
+Admin also can delete the contact by clicking the delete.
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
