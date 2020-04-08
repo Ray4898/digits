@@ -168,7 +168,7 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template-react/master/doc/landing-page.png)
+![](https://github.com/Ray4898/digits/tree/master/doc/homep.PNG)
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
