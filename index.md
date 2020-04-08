@@ -185,7 +185,7 @@ After logging in, here is the page that allows you to add new contact:
 
 #### List contact page
 
-After logging in, here is the page that allows you to list all the contact you have created:
+After logging in, here is the page that allows you to list all the contacts you have created:
 
 <img src="doc/userlistc.PNG">
 
@@ -203,7 +203,7 @@ You can define an "admin" user in the settings.json file. This user, after loggi
 
 <img src="doc/admin.PNG">
 
-#### Admin page (list all users stuff)
+#### Admin page (list all users contacts)
 
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the contacts by all of the users:
 
@@ -211,66 +211,3 @@ To provide a simple example of a "super power" for Admin users, the Admin page l
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
-### Collections
-
-The application implements a single Collection called "Stuff". Each Stuff document has the following fields: name, quantity, condition, and username.
-
-The Stuff collection is defined in [imports/api/stuff/stuff.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/imports/api/stuff/stuff.js).
-
-The Stuff collection is initialized in [imports/startup/server/stuff.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/imports/startup/server/stuff.js).
-
-### CSS
-
-The application uses the [React implementation of Semantic UI](http://react.semantic-ui.com/).
-
-### Routing
-
-For display and navigation among its four pages, the application uses [React Router](https://reacttraining.com/react-router/).
-
-Routing is defined in [imports/ui/layouts/App.jsx](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/imports/ui/layouts/App.jsx).
-
-
-### Authentication
-
-For authentication, the application uses the Meteor accounts package.
-
-When the application is run for the first time, a settings file (such as [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/config/settings.development.json)) should be passed to Meteor. That will lead to a default account being created through the code in [imports/startup/server/accounts.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/imports/startup/server/accounts.js).
-
-The application allows users to register and create new accounts at any time.
-
-### Authorization
-
-Only logged in users can manipulate Stuff documents (but any registered user can manipulate any Stuff document, even if they weren't the user that created it.)
-
-### Configuration
-
-The [config](https://github.com/ics-software-engineering/meteor-application-template-react/tree/master/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/config/settings.development.json).
-
-The [.gitignore](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/.gitignore) file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
-
-### Quality Assurance
-
-#### ESLint
-
-The application includes a [.eslintrc](https://github.com/ics-software-engineering/meteor-application-template-react/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
-
-```
-[~/meteor-application-template-react/app]-> meteor npm run lint
-
-> meteor-application-template-react@ lint /Users/philipjohnson/meteor-application-template-react/app
-> eslint --quiet ./imports
-```
-
-ESLint should run without generating any errors.
-
-It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
-
-## Screencasts
-
-For more information about this system, please watch one or more of the following screencasts. Note that the current source code might differ slightly from the code in these screencasts, but the changes should be very minor.
-
-  * [Walkthrough of system user interface (5 min)](https://www.youtube.com/watch?v=shYgqco1AUs)
-  * [Data and accounts structure and initialization (15 min)](https://www.youtube.com/watch?v=p9dvM6MdCGs)
-  * [Navigation, routing, pages, components (23 min)](https://www.youtube.com/watch?v=DAv0UjS0VjQ)
-  * [Forms (25 min)](https://www.youtube.com/watch?v=z02076QgDA8)
-  * [Authorization, authentication, and roles (10 min)](https://www.youtube.com/watch?v=_i1dgcP0zoI)
